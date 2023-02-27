@@ -1,0 +1,25 @@
+.upcoming {
+    grid-column: col-start 4 / col-end 5;
+    padding-block-start: 4rem;
+
+    display: grid;
+    grid-template-rows: 5rem 3rem repeat(2, min-content) 3rem repeat(2, min-content) 3rem 4rem;
+
+    .btn-from-button {
+        align-self: flex-start;
+        justify-self: flex-end;
+    }
+
+    .btn-from-link {
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-weight: 500;
+    }
+}

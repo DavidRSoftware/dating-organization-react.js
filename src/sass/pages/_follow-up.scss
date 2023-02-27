@@ -1,0 +1,23 @@
+.follow-up {
+    grid-column: col-start 4 / col-end 5;
+    padding-block-start: 4rem;
+    display: grid;
+    grid-template-rows: 4rem 3rem 3rem 6rem 3rem 6rem;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    label {
+        font-weight: 500;
+        font-size: 1.5rem;
+        align-self: flex-end;
+    }
+
+    nav {
+        align-self: flex-end;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
