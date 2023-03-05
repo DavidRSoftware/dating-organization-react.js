@@ -9,7 +9,7 @@ function Message() {
             <textarea id="message"></textarea>
             <nav>
                 <Link to="/follow-up" className="btn-from-link btn-grey">Back</Link>
-                <button className='btn-from-button btn-red'>Send</button>
+                <button className='btn-from-button btn-red' type="button">Send</button>
             </nav>
         </div>
 

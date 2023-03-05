@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Casual Meetup",
+        "date": "5/7/2023",
+        "time": "7pm",
+        "description": "Join other singles in your age range for the opportunity to meet others in a relaxed environment."
+    },
+    {
+        "id": 2,
+        "name": "Virtual Meetup",
+        "date": "5/14/2023",
+        "time": "7pm",
+        "description": "Join other singles in your age range online for our virtual meetup. A moderator will run fun icebreaker activities and interesting group discussions."
+    },
+    {
+        "id": 3,
+        "name": "Meetup at Local Restaurant",
+        "date": "5/21/2023",
+        "time": "7pm",
+        "description": "Join other singles in your age range for the opportunity to meet others in a relaxed environment. Small groups of four to seven individuals will meet together at a local restaurant."
+    }
+]

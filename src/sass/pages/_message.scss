@@ -2,7 +2,7 @@
     grid-column: col-start 4 / col-end 5;
     padding-block-start: 4rem;
     display: grid;
-    grid-template-rows: 5rem 5rem 10rem 5rem;
+    grid-template-rows: 5rem minmax(5rem, max-content) 10rem 5rem;
 
     h1 {
         font-size: 2.5rem;

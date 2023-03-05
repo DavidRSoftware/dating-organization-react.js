@@ -3,16 +3,12 @@
     padding-block-start: 4rem;
 
     display: grid;
-    grid-template-rows: 5rem 3rem repeat(2, min-content) 3rem repeat(2, min-content) 3rem 4rem;
-
-    .btn-from-button {
-        align-self: flex-start;
-        justify-self: flex-end;
-    }
+    grid-template-rows: minmax(5rem, max-content);
 
     .btn-from-link {
-        align-self: flex-start;
+        align-self: center;
         justify-self: flex-start;
+        margin: 1rem 0;
     }
 
     h1 {
@@ -21,5 +17,31 @@
 
     h2 {
         font-weight: 500;
+        margin-bottom: 1rem;
     }
+
+    .btn-from-button {
+        justify-self: end;
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    .details-button {
+        margin-bottom: 1rem;
+    }
+}
+
+.accordion {
+    // padding: 1rem 0;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-rows: 4rem 4rem 5rem min-content;
+
+    &__date,
+    &__time,
+    .btn-from-button {
+        align-self: center;
+    }
+
+
 }

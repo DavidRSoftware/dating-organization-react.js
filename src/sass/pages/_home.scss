@@ -3,7 +3,7 @@
     grid-column: col-start 4 / col-end 5;
     padding-block-start: 4rem;
     display: grid;
-    grid-template-rows: 5rem 3rem 5rem 4rem 3rem;
+    grid-template-rows: minmax(5rem, max-content) minmax(3rem, max-content) 5rem 4rem minmax(3rem, max-content);
 
     .btn-from-link {
         align-self: flex-start;
