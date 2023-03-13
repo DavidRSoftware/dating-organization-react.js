@@ -3,8 +3,10 @@ import { useState } from 'react';
 import data from './../../accordion-data.json';
 import AccordionBody from "../AccordionBody";
 
+
 function Upcoming() {
     const [isActive, setIsActive] = useState([false, false, false]);
+
 
     const accordionContent = element => {
         if (isActive[element] === true)
@@ -16,7 +18,7 @@ function Upcoming() {
 
     const buttonHandler = event => {
         const updatedState = isActive.map((value, index) => {
-            if (event.target.name == index)
+            if (event.target.name === String(index))
                 return !value;
             return false;
         })

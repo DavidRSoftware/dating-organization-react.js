@@ -6,17 +6,19 @@ function FollowUp() {
             <div className='follow-up'>
                   <h1>Follow Up</h1>
                   <label htmlFor="event-select">Select an event</label>
-                  <select id="event-select">
+
+                  <select id="event-select" name="event">
                         <option value="">Select Event</option>
                         <option value="restaurant">Meetup at Local Restaurant</option>
                         <option value="casual">Casual Meetup</option>
                         <option value="virtual">Virtual Meetup</option>
                   </select>
+
                   <label htmlFor="person-select">Select a person who you would like to comment about</label>
-                  <select id="person-select">
+                  <select id="person-select" name="person">
                         <option value="">Select Person</option>
                         <option value="sarah">Sarah</option>
-                        <option value="allison">Allison</option>
+                        <option value="rachel">Rachel</option>
                         <option value="alice">Alice</option>
                   </select>
                   <nav>
