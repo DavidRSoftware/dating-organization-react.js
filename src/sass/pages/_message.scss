@@ -1,29 +1,36 @@
 .message {
-    grid-column: col-start 4 / col-end 5;
-    padding-block-start: 4rem;
-    display: grid;
-    grid-template-rows: 5rem minmax(5rem, max-content) 15rem 6rem;
+    width: 320px;
+    height: 568px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 
-    h1 {
-        font-size: 2.5rem;
+    &__title {
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom: 30px;
     }
 
-    label {
-        font-weight: 500;
-        font-size: 1.5rem;
+    &__label {
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 21px;
+        display: block;
     }
 
-    textarea {
+    #message {
         resize: none;
-        padding: .375rem .75rem;
-        font-size: 1.5rem;
+        padding: 6px 12px;
+        font-size: 18px;
         border-radius: 5px;
         line-height: 1.5;
+        height: 300px;
+        display: block;
+        width: 100%;
     }
 
-    nav {
-        align-self: flex-end;
+    &__nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: right;
+        margin-top: 25px;
     }
 }

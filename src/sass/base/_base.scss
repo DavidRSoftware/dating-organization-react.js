@@ -8,11 +8,11 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; //10px
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     display: grid;
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 48px max-content;
 }

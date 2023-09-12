@@ -21,18 +21,16 @@ function Message() {
         </Modal>
     );
     return (
-
         <div className='message'>
-            <h1>Follow Up</h1>
-            <label htmlFor="message">Type here the message you would like to send to the event administrators</label>
+            <h1 className="message__title">Follow Up</h1>
+            <label htmlFor="message" className="message__label">Type here the message you would like to send to the event administrators</label>
             <textarea id="message" name="message"></textarea>
-            <nav>
+            <nav className="message__nav">
                 <Link to="/follow-up" className="btn-from-link btn-grey">Back</Link>
-                <button onClick={handleClick} className='btn-from-button btn-red' type="button">Send</button>
+                <button onClick={handleClick} className='btn-from-button btn-red next-button' type="button">Send</button>
             </nav>
             {showModal && modal}
         </div>
-
     );
 }
 

@@ -1,47 +1,44 @@
 .upcoming {
-    grid-column: col-start 4 / col-end 5;
-    padding-block-start: 4rem;
+    width: 320px;
+    height: 568px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 
-    display: grid;
-    grid-template-rows: minmax(5rem, max-content);
-
-    .btn-from-link {
-        align-self: center;
-        justify-self: flex-start;
-        margin: 1rem 0;
+    &__title {
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom: 30px;
     }
 
-    h1 {
-        font-size: 2.5rem;
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 21px;
     }
 
-    h2 {
-        font-weight: 500;
-        margin-bottom: 1rem;
+    .btn-red {
+        margin-left: auto;
     }
 
-    .btn-from-button {
-        justify-self: end;
-        align-self: center;
-        font-size: 1rem;
+    .divider-line {
+        margin-top: 11px;
+        margin-bottom: 16px;
     }
 
-    .details-button {
-        margin-bottom: 1rem;
+    .btn-grey {
+        margin-top: 21px;
     }
 }
 
 .accordion {
-    // padding: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 18px;
+    font-weight: 400;
     display: grid;
-    grid-template-rows: 4rem 4rem 5rem min-content;
+    grid-template-rows: 40px 40px 50px min-content;
 
     &__date,
     &__time,
     .btn-from-button {
         align-self: center;
     }
-
-
 }
