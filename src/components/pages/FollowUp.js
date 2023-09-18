@@ -8,6 +8,8 @@ function FollowUp() {
       const [isPeopleListOpen, setIsPeopleListOpen] = useState(false);
       const [eventState, setEventState] = useState(eventData);
       const [peopleState, setPeopleState] = useState(peopleData);
+      const [peopleDropdownHeaderTitle, setPeopleDropdownHeaderTitle] = useState("Select Event");
+      const [eventsDropdownHeaderTitle, setEventsDropdownHeaderTitle] = useState("Select Person");
 
       const peopleListRef = useRef(null);
       const eventListRef = useRef(null);
@@ -35,23 +37,29 @@ function FollowUp() {
       }
 
       const selectPeopleItem = id => {
+            let title = "";
             const tempArray = peopleState.map((item) => {
                   if (item.id === id) {
+                        title = item.name;
                         return { ...item, selected: true };
                   }
                   return { ...item, selected: false };
             });
+            setPeopleDropdownHeaderTitle(title);
             setPeopleState(tempArray);
             setIsPeopleListOpen(false);
       }
 
       const selectEventItem = id => {
+            let title = "";
             const tempArray = eventState.map((item) => {
                   if (item.id === id) {
+                        title = item.name;
                         return { ...item, selected: true };
                   }
                   return { ...item, selected: false };
             });
+            setEventsDropdownHeaderTitle(title);
             setEventState(tempArray);
             setIsEventsListOpen(false);
       }
@@ -62,7 +70,7 @@ function FollowUp() {
                   <div className="follow-up__label">Select an event</div>
 
                   <button className="dd-header" type="button" onClick={toggleEventListParent} ref={eventListRef}>
-                        <div className="dd-header-title">Select Event</div>
+                        <div className="dd-header-title">{eventsDropdownHeaderTitle}</div>
                         {isEventsListOpen
                               ? <span className="angle-up" onClick={toggleEventListChild}></span>
                               : <span className="angle-down" onClick={toggleEventListChild}></span>}
@@ -89,7 +97,7 @@ function FollowUp() {
                   <div className="follow-up__label">Select a person who you would like to comment about</div>
 
                   <button className="dd-header" type="button" onClick={togglePersonListParent} ref={peopleListRef}>
-                        <div className="dd-header-title">Select Person</div>
+                        <div className="dd-header-title">{peopleDropdownHeaderTitle}</div>
                         {isPeopleListOpen
                               ? <span className="angle-up" onClick={togglePersonListChild}></span>
                               : <span className="angle-down" onClick={togglePersonListChild}></span>}
