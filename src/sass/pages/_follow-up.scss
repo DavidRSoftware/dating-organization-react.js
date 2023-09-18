@@ -22,28 +22,4 @@
         justify-content: right;
         margin-top: 105px;
     }
-
-    &__select {
-        padding-left: 12px;
-        appearance: none;
-        border-radius: 5px;
-        background-image: url(../../images/chevron-down.svg);
-        background-repeat: no-repeat;
-        background-position: right 10px center;
-        background-size: 16px;
-        width: 280px;
-        font-size: 18px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        padding-top: 6px;
-        padding-bottom: 6px;
-
-        border: 2px solid $color-secondary;
-
-        option {
-            font-size: 14px;
-            font-weight: 500;
-        }
-    }
-
 }

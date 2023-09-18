@@ -2,16 +2,19 @@
     {
         "id": 1,
         "name": "Sarah",
-        "value": "sarah"
+        "value": "sarah",
+        "selected": "false"
     },
     {
         "id": 2,
         "name": "Rachel",
-        "value": "rachel"
+        "value": "rachel",
+        "selected": "false"
     },
     {
         "id": 3,
         "name": "Alice",
-        "value": "alice"
+        "value": "alice",
+        "selected": "false"
     }
 ]
